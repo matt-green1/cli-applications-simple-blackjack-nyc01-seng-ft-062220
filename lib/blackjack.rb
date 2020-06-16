@@ -59,6 +59,7 @@ def runner
   until hand_total > 21
     display_card_total(hand_total)
     hand_total += hit?(hand_total)
+    if hand_total
   end  
   
 end
